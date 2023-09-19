@@ -8,3 +8,4 @@ urlpatterns = [
     path('contact/', contact, name='contact'),
     path('admin/', admin.site.urls),
 ]
+

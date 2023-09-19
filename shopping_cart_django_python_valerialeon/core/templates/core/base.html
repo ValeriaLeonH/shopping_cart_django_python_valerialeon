@@ -1,4 +1,5 @@
-<!doctype html>
+{% load static %}
+<!DOCTYPE html>
 
 <html>
   <head>
@@ -6,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>{% block title %}{% endblock %} | Shopping Cart MAKEUP</title> 
+    <link type='text/css' href='{% static "css/base.css" %}' rel='stylesheet'/>
   </head>
 
-  <body>
+  <body class="body">
     <nav class="py-6 px-6 flex justify-between items-center border-b border-gray-200">
-      <a href="/" class="text-xl font-semibold">Val</a>
+      <a href="/" class="text-xl font-semibold"><img src='{% static "assets/logo.png/" %}'/>ARREGLAR LOGO</a>
 
       <div class="space-x-6">
         <a href="#" class="text-xl-lg font-semibold hover:text-gray-500">New item</a>
